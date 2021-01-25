@@ -2,6 +2,12 @@
 
 namespace Uppgift2
 {
+    /*
+    För att vara ärlig,
+    Jag var väldigt sent ute med att fixa den här uppgiften.
+    Jag hoppas det har lärt mig att ge mig på uppgifter tidigare än vad jag gjort hittills,
+    För experimenteringen hjälpte mig att begripa mina misstag som utfördes.
+    */
     class Program
     {
         static void Main(string[] args)

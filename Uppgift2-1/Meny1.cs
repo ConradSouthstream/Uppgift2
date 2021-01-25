@@ -13,9 +13,7 @@ namespace Uppgift2
         {
             string Menystatus = "stay";
             do
-            {
-                
-
+            {                
                 Console.WriteLine(
                     "Alternativ:" +
                     "\n 1 - skriv in ålder för rabbat uträkning." +
@@ -29,8 +27,8 @@ namespace Uppgift2
                         break;
                     case "2":
                         Console.WriteLine(
-                            $"total kostnad på sälskapet av {Antalsälskap} personer är: " +
-                            $"\n{Summa}kr");
+                            $"\ntotal kostnad på sälskapet av {Antalsälskap} personer är: " +
+                            $"\n{Summa}kr\n");
                         break;
                     case "3":
                         Menystatus = "out";
@@ -39,8 +37,7 @@ namespace Uppgift2
                         Console.WriteLine("Skriv ett giltigt kommando");
                         break;
                 }
-            } while (Menystatus == "stay");
-            
+            } while (Menystatus == "stay");            
          }  
         public static void Åldersamling()
         {
@@ -71,8 +68,7 @@ namespace Uppgift2
                     antalsällskap++;
                     summa += 90;
                     Console.WriteLine("Giltig för pensionärs rabatt, 90kr");
-                }
-                
+                }                
                 else
                 {
                     antalsällskap++;
@@ -83,6 +79,5 @@ namespace Uppgift2
             Summa = summa;
             Antalsälskap = antalsällskap;
         }
-
     }
 }
