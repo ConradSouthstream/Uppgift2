@@ -11,12 +11,7 @@ namespace Uppgift2
                 Startmeny();
                 Menyval();
 
-            } while (true);
-
-            
-            
-
-
+            } while (true);            
         }
         private static void Startmeny()
         {
@@ -25,7 +20,8 @@ namespace Uppgift2
                 "\n 0 - Gå ur programmet" +
                 "\n 1 - Beräkna biljetter" +
                 "\n 2 - repetativ inskrift" +
-                "\n 3 - Selektivt plock av ord i mening\n"
+                "\n 3 - Selektivt plock av ord i mening" +
+                "\n 4 - Presentera biljett räkningen\n"
                 );
         }
         private static void Menyval()
@@ -36,21 +32,23 @@ namespace Uppgift2
                     Environment.Exit(0);
                     break;
                 case "1":
-
+                    Meny1.Rabatt();
                     break;
-
                 case "2":
-
+                    Meny2.Tiogånger();
                     break;
-
                 case "3":
-
+                    Meny3.Selektivtredje();
                     break;
-
+                case "4":
+                    Console.WriteLine(
+                        $"\nför de {Meny1.Antalsälskap} registrerade ska det kosta:" +
+                        $"\n{Meny1.Summa}kr\n");
+                    break;
                 default:
                     Console.WriteLine("Felaktigt kommando\n");
                     break;
             };            
         }
-    }
+    }    
 }
